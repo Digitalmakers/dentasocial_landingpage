@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #39B7FF;
+    --dark-bg: #121212;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +10,7 @@
 }
 
 body {
-    background-color: #121212;
+    background-color: var(--dark-bg);
     color: white;
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -41,7 +46,7 @@ nav {
 }
 
 .try-btn {
-    background-color: #39B7FF;
+    background-color: var(--primary-color);
     border: none;
     padding: 12px 24px;
     border-radius: 24px;
@@ -75,7 +80,7 @@ nav {
 }
 
 .subtitle {
-    color: #39B7FF;
+    color: var(--primary-color);
     font-size: 18px;
     margin-bottom: 24px;
 }
@@ -104,9 +109,10 @@ h1 {
 .circle {
     width: 400px;
     height: 400px;
-    background-color: #39B7FF;
+    background-color: var(--primary-color);
     border-radius: 50%;
     opacity: 0.9;
+    margin: 0 auto;
 }
 
 /* Stats Section */
@@ -125,7 +131,7 @@ h1 {
 }
 
 .stats h3 {
-    color: #39B7FF;
+    color: var(--primary-color);
     font-size: 48px;
     margin-bottom: 8px;
 }
@@ -209,8 +215,8 @@ h1 {
 }
 
 .price-card.featured {
-    background-color: #39B7FF;
-    transform: scale(1.05);
+    background-color: var(--primary-color);
+    transform: translateY(-10px);
 }
 
 .price-card h3 {
@@ -335,6 +341,7 @@ h1 {
     .circle {
         width: 250px;
         height: 250px;
+        margin-top: 2rem;
     }
 
     .feature-grid,
